@@ -49,7 +49,7 @@ package5 = Package(
 package6 = Package(
     6,
     "3060 Lester St",
-    "Salt Lake City",
+    "West Valley City",
     "84119",
     "1030"
 )
@@ -97,7 +97,7 @@ package11 = Package(
 package12 = Package(
     12,
     "3575 W Valley Central Station",
-    "Salt Lake City",
+    "West Valley City",
     "84119",
     "EOD"
 )
@@ -113,7 +113,7 @@ package13 = Package(
 package14 = Package(
     14,
     "4300 S 1300 E",
-    "Salt Lake City",
+    "Millcreek",
     "84117",
     "1030"
 )
@@ -121,7 +121,7 @@ package14 = Package(
 package15 = Package(
     15,
     "4580 S 2300 E",
-    "Salt Lake City",
+    "Holladay",
     "84103",
     "0900"
 )
@@ -129,7 +129,7 @@ package15 = Package(
 package16 = Package(
     16,
     "4580 S 2300 E",
-    "Salt Lake City",
+    "Holladay",
     "84103",
     "1030"
 )
@@ -177,7 +177,7 @@ package21 = Package(
 package22 = Package(
     22,
     "6351 South 900 East",
-    "Salt Lake City",
+    "Murray",
     "84118",
     "EOD"
 )
@@ -193,7 +193,7 @@ package23 = Package(
 package24 = Package(
     24,
     "5025 State St",
-    "Salt Lake City",
+    "Murray",
     "84107",
     "EOD"
 )
@@ -246,10 +246,82 @@ package30 = Package(
     "1030"
 )
 
-package28 = Package(
-    28,
-    "2835 Main St",
+package31 = Package(
+    31,
+    "3365 S 900 W",
+    "Salt Lake City",
+    "84119",
+    "1030"
+)
+
+package32 = Package(
+    32,
+    "3365 S 900 W",
+    "Salt Lake City",
+    "84119",
+    "EOD"
+)
+
+package33 = Package(
+    33,
+    "2530 S 500 E",
+    "Salt Lake City",
+    "84106",
+    "EOD"
+)
+
+package34 = Package(
+    34,
+    "4580 S 2300 E",
+    "Holladay",
+    "84117",
+    "1030"
+)
+
+package35 = Package(
+    35,
+    "1060 Dalton Ave S",
+    "Salt Lake City",
+    "84104",
+    "EOD"
+)
+
+package36 = Package(
+    36,
+    "2300 Parkway Blvd",
+    "West Valley City",
+    "84119",
+    "EOD"
+)
+
+package37 = Package(
+    37,
+    "410 S State St",
+    "Salt Lake City",
+    "84111",
+    "1030"
+)
+
+package38 = Package(
+    38,
+    "410 S State St",
+    "Salt Lake City",
+    "84111",
+    "EOD"
+)
+
+package39 = Package(
+    39,
+    "2010 W 500 S",
+    "Salt Lake City",
+    "84104",
+    "EOD"
+)
+
+package40 = Package(
+    40,
+    "380 W 2880 S",
     "Salt Lake City",
     "84115",
-    "EOD"
+    "1030"
 )
