@@ -176,7 +176,79 @@ package21 = Package(
 
 package22 = Package(
     22,
-    "3595 Main St",
+    "6351 South 900 East",
+    "Salt Lake City",
+    "84118",
+    "EOD"
+)
+
+package23 = Package(
+    23,
+    "5100 South 2700 West",
+    "Salt Lake City",
+    "84118",
+    "EOD"
+)
+
+package24 = Package(
+    24,
+    "5025 State St",
+    "Salt Lake City",
+    "84107",
+    "EOD"
+)
+
+package25 = Package(
+    25,
+    "5383 South 900 East #104",
+    "Salt Lake City",
+    "84117",
+    "1030"
+)
+
+package26 = Package(
+    26,
+    "5383 South 900 East #104",
+    "Salt Lake City",
+    "84117",
+    "EOD"
+)
+
+package27 = Package(
+    27,
+    "1060 Dalton Ave S",
+    "Salt Lake City",
+    "84104",
+    "EOD"
+)
+
+package28 = Package(
+    28,
+    "2835 Main St",
+    "Salt Lake City",
+    "84115",
+    "EOD"
+)
+
+package29 = Package(
+    29,
+    "1330 2100 S",
+    "Salt Lake City",
+    "84106",
+    "1030"
+)
+
+package30 = Package(
+    30,
+    "300 State St",
+    "Salt Lake City",
+    "84103",
+    "1030"
+)
+
+package28 = Package(
+    28,
+    "2835 Main St",
     "Salt Lake City",
     "84115",
     "EOD"
