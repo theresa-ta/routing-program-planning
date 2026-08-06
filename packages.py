@@ -40,7 +40,7 @@ package4 = Package(
 
 package5 = Package(
     5,
-    "410 S State St,
+    "410 S State St",
     "Salt Lake City",
     "84111",
     "EOD"
@@ -166,10 +166,18 @@ package20 = Package(
     "1030"
 )
 
-package8 = Package(
-    8,
-    "300 State St",
+package21 = Package(
+    21,
+    "3595 Main St",
     "Salt Lake City",
-    "84103",
+    "84115",
+    "EOD"
+)
+
+package22 = Package(
+    22,
+    "3595 Main St",
+    "Salt Lake City",
+    "84115",
     "EOD"
 )
