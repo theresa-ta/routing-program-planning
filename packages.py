@@ -327,3 +327,16 @@ packages[40] = Package(
     "84115",
     "1030"
 )
+
+"""so far, i created a class (blueprint) for each package to follow. 
+after that, i created an object for each individual package assigning 
+a package to all of its attributes without having to repeatidly 
+identify id, address, zip, etc.
+
+then, i created an empty dictionary to store all of the packages, like 
+a hash table for lookup
+"""
+
+#package = packages[1]
+#print("Package ID:", package.package_id)
+#test case
