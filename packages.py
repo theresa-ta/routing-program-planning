@@ -6,321 +6,319 @@ class Package:#this is a blueprint for all packages, each showing these specific
         self.zipcode = zipcode
         self.deadline = deadline
 
-packages = {}
-
-packages[1] = Package(
+packages = [
+Package(
     1,
     "195 W Oakland Ave",
     "Salt Lake City",
     "84115",
     "1030"
-)
+),
 
-packages[2] = Package(
+Package(
     2,
     "2530 S 500 E",
     "Salt Lake City",
     "84106",
     "EOD"
-)
-
-packages[3] = Package(
+),
+Package(
     3,
     "233 Canyon Rd",
     "Salt Lake City",
     "84103",
     "EOD"
-)
+),
 
-packages[4] = Package(
+Package(
     4,
     "380 W 2880 S",
     "Salt Lake City",
     "84115",
     "EOD"
-)
+),
 
-packages[5] = Package(
+Package(
     5,
     "410 S State St",
     "Salt Lake City",
     "84111",
     "EOD"
-)
+),
 
-packages[6] = Package(
+Package(
     6,
     "3060 Lester St",
     "West Valley City",
     "84119",
     "1030"
-)
+),
 
-packages[7] = Package(
+Package(
     7,
     "1330 2100 S",
     "Salt Lake City",
     "84106",
     "EOD"
-)
+),
 
-packages[8] = Package(
+Package(
     8,
     "300 State St",
     "Salt Lake City",
     "84103",
     "EOD"
-)
+),
 
-packages[9] = Package(
+Package(
     9,
     "300 State St",
     "Salt Lake City",
     "84103",
     "EOD"
-)
+),
 
-packages[10] = Package(
+Package(
     10,
     "600 E 900 S",
     "Salt Lake City",
     "84105",
     "EOD"
-)
+),
 
-packages[11] = Package(
+Package(
     11,
     "2600 Taylorsville BLvd",
     "Salt Lake City",
     "84118",
     "EOD"
-)
+),
 
-packages[12] = Package(
+Package(
     12,
     "3575 W Valley Central Station",
     "West Valley City",
     "84119",
     "EOD"
-)
+),
 
-packages[13] = Package(
+Package(
     13,
     "2010 W 500 S",
     "Salt Lake City",
     "84104",
     "1030"
-)
+),
 
-packages[14] = Package(
+Package(
     14,
     "4300 S 1300 E",
     "Millcreek",
     "84117",
     "1030"
-)
+),
 
-packages[15] = Package(
+Package(
     15,
     "4580 S 2300 E",
     "Holladay",
     "84103",
     "0900"
-)
+),
 
-packages[16] = Package(
+Package(
     16,
     "4580 S 2300 E",
     "Holladay",
     "84103",
     "1030"
-)
+),
 
-packages[17] = Package(
+Package(
     17,
     "3148 S 1100 W",
     "Salt Lake City",
     "84119",
     "EOD"
-)
+),
 
-packages[18] = Package(
+Package(
     18,
     "1488 4800 S",
     "Salt Lake City",
     "84123",
     "EOD"
-)
+),
 
-packages[19] = Package(
+Package(
     19,
     "177 W Price Ave",
     "Salt Lake City",
     "84115",
     "EOD"
-)
+),
 
-packages[20] = Package(
+Package(
     20,
     "3591 Main St",
     "Salt Lake City",
     "84115",
     "1030"
-)
+),
 
-packages[21] = Package(
+Package(
     21,
     "3595 Main St",
     "Salt Lake City",
     "84115",
     "EOD"
-)
+),
 
-packages[22] = Package(
+Package(
     22,
     "6351 South 900 East",
     "Murray",
     "84118",
     "EOD"
-)
+),
 
-packages[23] = Package(
+Package(
     23,
     "5100 South 2700 West",
     "Salt Lake City",
     "84118",
     "EOD"
-)
+),
 
-packages[24] = Package(
+Package(
     24,
     "5025 State St",
     "Murray",
     "84107",
     "EOD"
-)
+),
 
-packages[25] = Package(
+Package(
     25,
     "5383 South 900 East #104",
     "Salt Lake City",
     "84117",
     "1030"
-)
+),
 
-packages[26] = Package(
+Package(
     26,
     "5383 South 900 East #104",
     "Salt Lake City",
     "84117",
     "EOD"
-)
+),
 
-packages[27] = Package(
+Package(
     27,
     "1060 Dalton Ave S",
     "Salt Lake City",
     "84104",
     "EOD"
-)
+),
 
-packages[28] = Package(
+Package(
     28,
     "2835 Main St",
     "Salt Lake City",
     "84115",
     "EOD"
-)
+),
 
-packages[29] = Package(
+Package(
     29,
     "1330 2100 S",
     "Salt Lake City",
     "84106",
     "1030"
-)
+),
 
-packages[30] = Package(
+Package(
     30,
     "300 State St",
     "Salt Lake City",
     "84103",
     "1030"
-)
+),
 
-packages[31] = Package(
+Package(
     31,
     "3365 S 900 W",
     "Salt Lake City",
     "84119",
     "1030"
-)
+),
 
-packages[32] = Package(
+Package(
     32,
     "3365 S 900 W",
     "Salt Lake City",
     "84119",
     "EOD"
-)
+),
 
-packages[33] = Package(
+Package(
     33,
     "2530 S 500 E",
     "Salt Lake City",
     "84106",
     "EOD"
-)
+),
 
-packages[34] = Package(
+Package(
     34,
     "4580 S 2300 E",
     "Holladay",
     "84117",
     "1030"
-)
+),
 
-packages[35] = Package(
+Package(
     35,
     "1060 Dalton Ave S",
     "Salt Lake City",
     "84104",
     "EOD"
-)
+),
 
-packages[36] = Package(
+Package(
     36,
     "2300 Parkway Blvd",
     "West Valley City",
     "84119",
     "EOD"
-)
+),
 
-packages[37] = Package(
+Package(
     37,
     "410 S State St",
     "Salt Lake City",
     "84111",
     "1030"
-)
+),
 
-packages[38] = Package(
+Package(
     38,
     "410 S State St",
     "Salt Lake City",
     "84111",
     "EOD"
-)
+),
 
-packages[39] = Package(
+Package(
     39,
     "2010 W 500 S",
     "Salt Lake City",
     "84104",
     "EOD"
-)
+),
 
-packages[40] = Package(
+Package(
     40,
     "380 W 2880 S",
     "Salt Lake City",
@@ -328,6 +326,7 @@ packages[40] = Package(
     "1030"
 )
 
+]
 """so far, i created a class (blueprint) for each package to follow. 
 after that, i created an object for each individual package assigning 
 a package to all of its attributes without having to repeatidly 

@@ -10,3 +10,13 @@ while True:
     minutes = int(travel_time)
     seconds = round((travel_time - minutes) * 60)
     print(f"{minutes} minutes, {seconds} seconds.") 
+
+""" steps to complete this assignment:
+1. create class packages
+2. insert package into hash tables
+3. create class trucks
+4. assign packages to trucks
+5. nearest alogorithm 
+6. update package status, mileage, + time
+7. print results
+"""
