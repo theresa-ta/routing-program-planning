@@ -1,10 +1,14 @@
 class Package:#this is a blueprint for all packages, each showing these specific attributes so there is minimal repition
-    def __init__(self, package_id, address, city, zipcode, deadline):
+    def __init__(self, package_id, address, city, zipcode, deadline, weight):
         self.package_id = package_id
         self.address = address
         self.city = city
         self.zipcode = zipcode
         self.deadline = deadline
+        self.weight = weight
+
+        self.status = "At Hub"
+        self.delivery_time = None
 
 #notice class Package is just the blueprintt
 #in order to use the blueprint to create the object
@@ -16,7 +20,8 @@ Package(
     "195 W Oakland Ave",
     "Salt Lake City",
     "84115",
-    "1030"
+    "1030",
+    21
 ),
 
 Package(
@@ -24,14 +29,16 @@ Package(
     "2530 S 500 E",
     "Salt Lake City",
     "84106",
-    "EOD"
+    "EOD",
+    44
 ),
 Package(
     3,
     "233 Canyon Rd",
     "Salt Lake City",
     "84103",
-    "EOD"
+    "EOD",
+    2
 ),
 
 Package(
@@ -39,7 +46,8 @@ Package(
     "380 W 2880 S",
     "Salt Lake City",
     "84115",
-    "EOD"
+    "EOD",
+    4
 ),
 
 Package(
@@ -47,7 +55,8 @@ Package(
     "410 S State St",
     "Salt Lake City",
     "84111",
-    "EOD"
+    "EOD",
+    5
 ),
 
 Package(
@@ -55,7 +64,8 @@ Package(
     "3060 Lester St",
     "West Valley City",
     "84119",
-    "1030"
+    "1030",
+    88
 ),
 
 Package(
@@ -63,7 +73,8 @@ Package(
     "1330 2100 S",
     "Salt Lake City",
     "84106",
-    "EOD"
+    "EOD",
+    8
 ),
 
 Package(
@@ -71,7 +82,8 @@ Package(
     "300 State St",
     "Salt Lake City",
     "84103",
-    "EOD"
+    "EOD",
+    9
 ),
 
 Package(
@@ -79,7 +91,8 @@ Package(
     "300 State St",
     "Salt Lake City",
     "84103",
-    "EOD"
+    "EOD",
+    2
 ),
 
 Package(
@@ -87,7 +100,8 @@ Package(
     "600 E 900 S",
     "Salt Lake City",
     "84105",
-    "EOD"
+    "EOD",
+    1
 ),
 
 Package(
@@ -95,7 +109,8 @@ Package(
     "2600 Taylorsville BLvd",
     "Salt Lake City",
     "84118",
-    "EOD"
+    "EOD",
+    1
 ),
 
 Package(
@@ -103,7 +118,8 @@ Package(
     "3575 W Valley Central Station",
     "West Valley City",
     "84119",
-    "EOD"
+    "EOD",
+    1
 ),
 
 Package(
@@ -111,7 +127,8 @@ Package(
     "2010 W 500 S",
     "Salt Lake City",
     "84104",
-    "1030"
+    "1030",
+    1
 ),
 
 Package(
@@ -119,7 +136,8 @@ Package(
     "4300 S 1300 E",
     "Millcreek",
     "84117",
-    "1030"
+    "1030",
+    88
 ),
 
 Package(
@@ -127,7 +145,8 @@ Package(
     "4580 S 2300 E",
     "Holladay",
     "84103",
-    "0900"
+    "0900",
+    4
 ),
 
 Package(
@@ -135,7 +154,8 @@ Package(
     "4580 S 2300 E",
     "Holladay",
     "84103",
-    "1030"
+    "1030",
+    88
 ),
 
 Package(
@@ -143,7 +163,8 @@ Package(
     "3148 S 1100 W",
     "Salt Lake City",
     "84119",
-    "EOD"
+    "EOD",
+    2
 ),
 
 Package(
@@ -151,7 +172,8 @@ Package(
     "1488 4800 S",
     "Salt Lake City",
     "84123",
-    "EOD"
+    "EOD",
+    6
 ),
 
 Package(
@@ -159,7 +181,8 @@ Package(
     "177 W Price Ave",
     "Salt Lake City",
     "84115",
-    "EOD"
+    "EOD",
+    37
 ),
 
 Package(
@@ -167,7 +190,8 @@ Package(
     "3591 Main St",
     "Salt Lake City",
     "84115",
-    "1030"
+    "1030",
+    37
 ),
 
 Package(
@@ -175,7 +199,8 @@ Package(
     "3595 Main St",
     "Salt Lake City",
     "84115",
-    "EOD"
+    "EOD",
+    3
 ),
 
 Package(
@@ -183,7 +208,8 @@ Package(
     "6351 South 900 East",
     "Murray",
     "84118",
-    "EOD"
+    "EOD",
+    2
 ),
 
 Package(
@@ -191,7 +217,8 @@ Package(
     "5100 South 2700 West",
     "Salt Lake City",
     "84118",
-    "EOD"
+    "EOD",
+    5
 ),
 
 Package(
@@ -199,7 +226,8 @@ Package(
     "5025 State St",
     "Murray",
     "84107",
-    "EOD"
+    "EOD",
+    7
 ),
 
 Package(
@@ -207,7 +235,8 @@ Package(
     "5383 South 900 East #104",
     "Salt Lake City",
     "84117",
-    "1030"
+    "1030",
+    7
 ),
 
 Package(
@@ -215,7 +244,8 @@ Package(
     "5383 South 900 East #104",
     "Salt Lake City",
     "84117",
-    "EOD"
+    "EOD",
+    25
 ),
 
 Package(
@@ -223,7 +253,8 @@ Package(
     "1060 Dalton Ave S",
     "Salt Lake City",
     "84104",
-    "EOD"
+    "EOD",
+    5
 ),
 
 Package(
@@ -231,7 +262,8 @@ Package(
     "2835 Main St",
     "Salt Lake City",
     "84115",
-    "EOD"
+    "EOD",
+    7
 ),
 
 Package(
@@ -239,7 +271,8 @@ Package(
     "1330 2100 S",
     "Salt Lake City",
     "84106",
-    "1030"
+    "1030",
+    2
 ),
 
 Package(
@@ -247,7 +280,8 @@ Package(
     "300 State St",
     "Salt Lake City",
     "84103",
-    "1030"
+    "1030",
+    1
 ),
 
 Package(
@@ -255,7 +289,8 @@ Package(
     "3365 S 900 W",
     "Salt Lake City",
     "84119",
-    "1030"
+    "1030",
+    1
 ),
 
 Package(
@@ -263,7 +298,8 @@ Package(
     "3365 S 900 W",
     "Salt Lake City",
     "84119",
-    "EOD"
+    "EOD",
+    1
 ),
 
 Package(
@@ -271,7 +307,8 @@ Package(
     "2530 S 500 E",
     "Salt Lake City",
     "84106",
-    "EOD"
+    "EOD",
+    1
 ),
 
 Package(
@@ -279,7 +316,8 @@ Package(
     "4580 S 2300 E",
     "Holladay",
     "84117",
-    "1030"
+    "1030",
+    2
 ),
 
 Package(
@@ -287,7 +325,8 @@ Package(
     "1060 Dalton Ave S",
     "Salt Lake City",
     "84104",
-    "EOD"
+    "EOD",
+    88
 ),
 
 Package(
@@ -295,7 +334,8 @@ Package(
     "2300 Parkway Blvd",
     "West Valley City",
     "84119",
-    "EOD"
+    "EOD",
+    88
 ),
 
 Package(
@@ -303,7 +343,8 @@ Package(
     "410 S State St",
     "Salt Lake City",
     "84111",
-    "1030"
+    "1030",
+    2
 ),
 
 Package(
@@ -311,7 +352,8 @@ Package(
     "410 S State St",
     "Salt Lake City",
     "84111",
-    "EOD"
+    "EOD",
+    9
 ),
 
 Package(
@@ -319,7 +361,8 @@ Package(
     "2010 W 500 S",
     "Salt Lake City",
     "84104",
-    "EOD"
+    "EOD",
+    9
 ),
 
 Package(
@@ -327,7 +370,8 @@ Package(
     "380 W 2880 S",
     "Salt Lake City",
     "84115",
-    "1030"
+    "1030",
+    45
 )
 
 ]
@@ -341,5 +385,5 @@ a hash table for lookup
 """
 
 #package = packages[1]
-#print("Package ID:", package.package_id)
+#print("Package ID:", package.delivery_time)
 #test case

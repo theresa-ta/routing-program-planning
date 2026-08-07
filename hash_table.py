@@ -11,3 +11,6 @@ class HashTable:
         bucket = self.hashkey(package.package_id) #how you are storing the package in the bucket, through hashkey
         self.table[bucket] = package #replaces None with package
 
+    def lookup(self, package_id):
+        bucket = self.hashkey(package_id)
+        return self.table[bucket]
