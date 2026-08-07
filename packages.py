@@ -6,6 +6,10 @@ class Package:#this is a blueprint for all packages, each showing these specific
         self.zipcode = zipcode
         self.deadline = deadline
 
+#notice class Package is just the blueprintt
+#in order to use the blueprint to create the object
+#we did Package(...). this created the object Package following class Package 
+
 packages = [
 Package(
     1,

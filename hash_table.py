@@ -8,6 +8,6 @@ class HashTable:
         return key - 1 #since list start at 0, key - 1 will place package # to index #. ex: package 1 = 1 - 1 = 0, package 1 is the first package so it should go to list[0].
     
     def insert(self, package): #create insert to be able to insert package into hash table self.table
-        bucket = self.hashkey(package.package_id)
-        self.table[bucket] = package
+        bucket = self.hashkey(package.package_id) #how you are storing the package in the bucket, through hashkey
+        self.table[bucket] = package #replaces None with package
 
