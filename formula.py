@@ -20,3 +20,11 @@ while True:
 6. update package status, mileage, + time
 7. print results
 """
+
+"""
+package.py & class Package: create the parts aka parts to a PC
+hash_table & class HashTable: create storage system. garage organization
+truck.py & class Truck: vehicle that carries packages
+main.py: driver, mastermind :D
+
+"""
