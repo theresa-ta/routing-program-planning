@@ -19,3 +19,15 @@ for package in packages:
 
 #terminal intuitive interface -> delivery status, delivery time, any package time, total mileage
 print("WGUPUS Terminal Intuitive Interface\n1. Look up package\n2. View total mileage\n3. Exit")
+
+choice = int(input("Pick which option you want."))
+
+while choice != 3:
+    if choice == 1:
+        package_lookup = int(input("What package number?"))
+        package_info = hash_table.lookup(package_lookup)
+        print(package_info.status, package_info.delivery_time)
+    elif choice == 2:
+        pass #havnt created truck so nothing is keeping track of mileage right now
+    else:
+        pass
