@@ -1,4 +1,4 @@
-truck_speed = 16 #created a while loop to help get distance and time for each stop. used for pre-planning
+truck_speed = 18 #created a while loop to help get distance and time for each stop. used for pre-planning
 
 while True:
     distance = float(input())

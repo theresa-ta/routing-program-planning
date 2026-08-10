@@ -4,3 +4,4 @@ class Truck:
         self.cur_mile = cur_mile
         self.packages_truck = packages_truck
         self.time = "08:00"
+        self.current_location = "Hub"

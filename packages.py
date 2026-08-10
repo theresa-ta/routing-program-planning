@@ -10,10 +10,6 @@ class Package:#this is a blueprint for all packages, each showing these specific
         self.status = "At Hub"
         self.delivery_time = None
 
-#notice class Package is just the blueprintt
-#in order to use the blueprint to create the object
-#we did Package(...). this created the object Package following class Package 
-
 packages = [
 Package(
     1,
@@ -380,7 +376,7 @@ after that, i created an object for each individual package assigning
 a package to all of its attributes without having to repeatidly 
 identify id, address, zip, etc.
 
-then, i created an empty dictionary to store all of the packages, like 
+then, i created an empty list to store all of the packages, like 
 a hash table for lookup
 """
 

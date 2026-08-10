@@ -35,6 +35,16 @@ truck2 = Truck(
     []
 )
 
+truck1.packages_truck.extend(group1)
+truck1.packages_truck.extend(group5)
+
+truck2.packages_truck.extend(group3)
+truck2.packages_truck.extend(group4)
+
+#for package in truck1.packages_truck: checking to see if it worked
+    #print(package.package_id)
+
+
 #terminal intuitive interface -> delivery status, delivery time, any package time, total mileage
 print("WGUPUS Terminal Intuitive Interface\n1. Look up package\n2. View total mileage\n3. Exit")
 
@@ -50,3 +60,4 @@ while choice != 3:
     else:
         pass
     choice = int(input("Pick which option you want."))
+
