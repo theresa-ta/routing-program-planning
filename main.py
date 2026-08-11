@@ -46,7 +46,7 @@ truck2.packages_truck.extend(group4)
 #for package in truck1.packages_truck: checking to see if it worked
     #print(package.package_id)
 
-#list containing truck route from, to. hub -> 14, mileage. 
+#list containing truck route from, to. ex: hub -> 14, mileage. 
 truck1_route = [
     (14, 1.9),
     ([15, 16, 34], 2.0),
@@ -87,9 +87,19 @@ truck2b_route = [
     (hub, 5.0)
     ]
 
-truck1_miles = 0
+truck1_time = 8 * 60
+
 for miles in truck1_route:
-    truck1_miles += miles[1]
+    truck1.cur_mile += miles[1]
+
+    travel_time = (miles[1] / 18) * 60
+    truck1_time += travel_time #have to convert this to time
+
+    truck1_hours = int(truck1_time // 60)
+    truck1_minute = int(truck1_time % 60)
+    truck1_cur_time = [truck1_hours, truck1_minute]
+
+#print(truck1_cur_time) THIS IS CORRECT!!! YAY IT MATCHES THE PRE PLANNING
 
 truck2_miles = 0
 for miles in truck2_route:
@@ -100,7 +110,7 @@ for miles in truck2b_route:
     truck2b_miles += miles[1]
 
 truck2_total = truck2_miles + truck2b_miles
-total_miles = truck2_total + truck1_miles
+total_miles = truck2_total + truck1.cur_mile
 
 #terminal intuitive interface -> delivery status, delivery time, any package time, total mileage
 print("WGUPUS Terminal Intuitive Interface\n1. Look up package\n2. View total mileage\n3. Exit")
