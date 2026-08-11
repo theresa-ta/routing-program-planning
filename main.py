@@ -87,6 +87,20 @@ truck2b_route = [
     (hub, 5.0)
     ]
 
+truck1_miles = 0
+for miles in truck1_route:
+    truck1_miles += miles[1]
+
+truck2_miles = 0
+for miles in truck2_route:
+    truck2_miles += miles[1]
+
+truck2b_miles = 0
+for miles in truck2b_route:
+    truck2b_miles += miles[1]
+
+truck2_total = truck2_miles + truck2b_miles
+total_miles = truck2_total + truck1_miles
 
 #terminal intuitive interface -> delivery status, delivery time, any package time, total mileage
 print("WGUPUS Terminal Intuitive Interface\n1. Look up package\n2. View total mileage\n3. Exit")
