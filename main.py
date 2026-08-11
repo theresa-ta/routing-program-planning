@@ -1,6 +1,4 @@
 #Student ID: 011512781
-
-#import files 
 from packages import packages
 from hash_table import HashTable
 from truck import Truck
@@ -87,6 +85,7 @@ truck2b_route = [
     (hub, 5.0)
     ]
 
+#create truck time start at 8 am. 8X60 so that we can calculate hours/minutes conversion later
 truck1_time = 8 * 60
 
 for miles in truck1_route:
@@ -94,10 +93,19 @@ for miles in truck1_route:
 
     travel_time = (miles[1] / 18) * 60
     truck1_time += travel_time #have to convert this to time
-
-    package = hash_table.lookup(miles[0])
-    package.delivery_time = truck1_time
-    package.status = "Delivered"
+  
+    if miles[0] == hub:
+        pass
+    elif isinstance(miles[0], list): #isinstance a function call. isinstance(object, type)
+        for i in range(len(miles[0])):
+            package = hash_table.lookup(miles[0][i]) #variable nested indexing. variable[x][x]
+            package.delivery_time = truck1_time
+            package.status = "Delivered"
+    else:
+        package = hash_table.lookup(miles[0])
+        package.delivery_time = truck1_time
+        package.status = "Delivered"
+   
 
     #truck1_hours = int(truck1_time // 60)
     #truck1_minute = int(truck1_time % 60)
@@ -119,7 +127,7 @@ total_miles = truck2_total + truck1.cur_mile
 #terminal intuitive interface -> delivery status, delivery time, any package time, total mileage
 print("WGUPUS Terminal Intuitive Interface\n1. Look up package\n2. View total mileage\n3. Exit")
 
-choice = int(input("Pick which option you want."))
+choice = int(input("Pick which option you want. "))
 
 while choice != 3:
     if choice == 1:
@@ -130,5 +138,5 @@ while choice != 3:
         pass #truck mileage not implemented yet 
     else:
         pass
-    choice = int(input("Pick which option you want."))
+    choice = int(input("Pick which option you want. "))
 
