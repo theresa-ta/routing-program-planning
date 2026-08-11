@@ -95,9 +95,13 @@ for miles in truck1_route:
     travel_time = (miles[1] / 18) * 60
     truck1_time += travel_time #have to convert this to time
 
-    truck1_hours = int(truck1_time // 60)
-    truck1_minute = int(truck1_time % 60)
-    truck1_cur_time = [truck1_hours, truck1_minute]
+    package = hash_table.lookup(miles[0])
+    package.delivery_time = truck1_time
+    package.status = "Delivered"
+
+    #truck1_hours = int(truck1_time // 60)
+    #truck1_minute = int(truck1_time % 60)
+    #truck1_cur_time = [truck1_hours, truck1_minute]
 
 #print(truck1_cur_time) THIS IS CORRECT!!! YAY IT MATCHES THE PRE PLANNING
 
