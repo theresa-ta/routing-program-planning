@@ -160,7 +160,7 @@ while choice != 3:
         package_info = hash_table.lookup(package_lookup)
         print(package_info.status, package_info.delivery_time)
     elif choice == 2:
-        pass #truck mileage not implemented yet 
+        print(truck1.cur_mile + truck2.cur_mile)
     else:
         pass
     choice = int(input("Pick which option you want. "))
