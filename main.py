@@ -105,24 +105,49 @@ for miles in truck1_route:
         package = hash_table.lookup(miles[0])
         package.delivery_time = truck1_time
         package.status = "Delivered"
-   
 
-    #truck1_hours = int(truck1_time // 60)
-    #truck1_minute = int(truck1_time % 60)
-    #truck1_cur_time = [truck1_hours, truck1_minute]
+truck2_time = 8 * 60
+
+for miles in truck2_route:
+    truck2.cur_mile += miles[1]
+
+    travel_time = (miles[1] / 18) * 60
+    truck2_time += travel_time #have to convert this to time
+  
+    if miles[0] == hub:
+        pass
+    elif isinstance(miles[0], list): #isinstance a function call. isinstance(object, type)
+        for i in range(len(miles[0])):
+            package = hash_table.lookup(miles[0][i]) #variable nested indexing. variable[x][x]
+            package.delivery_time = truck2_time
+            package.status = "Delivered"
+    else:
+        package = hash_table.lookup(miles[0])
+        package.delivery_time = truck2_time
+        package.status = "Delivered"
+
+
+for miles in truck2b_route:
+    truck2.cur_mile += miles[1]
+
+    travel_time = (miles[1] / 18) * 60
+    truck2_time += travel_time #have to convert this to time
+  
+    if miles[0] == hub:
+        pass
+    elif isinstance(miles[0], list): #isinstance a function call. isinstance(object, type)
+        for i in range(len(miles[0])):
+            package = hash_table.lookup(miles[0][i]) #variable nested indexing. variable[x][x]
+            package.delivery_time = truck2_time
+            package.status = "Delivered"
+    else:
+        package = hash_table.lookup(miles[0])
+        package.delivery_time = truck2_time
+        package.status = "Delivered"
 
 #print(truck1_cur_time) THIS IS CORRECT!!! YAY IT MATCHES THE PRE PLANNING
 
-truck2_miles = 0
-for miles in truck2_route:
-    truck2_miles += miles[1]
 
-truck2b_miles = 0
-for miles in truck2b_route:
-    truck2b_miles += miles[1]
-
-truck2_total = truck2_miles + truck2b_miles
-total_miles = truck2_total + truck1.cur_mile
 
 #terminal intuitive interface -> delivery status, delivery time, any package time, total mileage
 print("WGUPUS Terminal Intuitive Interface\n1. Look up package\n2. View total mileage\n3. Exit")
@@ -131,7 +156,7 @@ choice = int(input("Pick which option you want. "))
 
 while choice != 3:
     if choice == 1:
-        package_lookup = int(input("What package number?"))
+        package_lookup = int(input("What package number? "))
         package_info = hash_table.lookup(package_lookup)
         print(package_info.status, package_info.delivery_time)
     elif choice == 2:
