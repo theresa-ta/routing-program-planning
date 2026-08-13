@@ -100,11 +100,10 @@ for miles in truck1_route:
         for i in range(len(miles[0])):
             package = hash_table.lookup(miles[0][i]) #variable nested indexing. variable[x][x]
             package.delivery_time = truck1_time
-            package.status = "Delivered"
     else:
         package = hash_table.lookup(miles[0])
         package.delivery_time = truck1_time
-        package.status = "Delivered"
+    
 
 truck2_time = 8 * 60
 
@@ -119,12 +118,10 @@ for miles in truck2_route:
     elif isinstance(miles[0], list): #isinstance a function call. isinstance(object, type)
         for i in range(len(miles[0])):
             package = hash_table.lookup(miles[0][i]) #variable nested indexing. variable[x][x]
-            package.delivery_time = truck2_time
-            package.status = "Delivered"
+            package.delivery_time = truck2_time        
     else:
         package = hash_table.lookup(miles[0])
         package.delivery_time = truck2_time
-        package.status = "Delivered"
 
 
 for miles in truck2b_route:
@@ -135,21 +132,15 @@ for miles in truck2b_route:
   
     if miles[0] == hub:
         pass
+
     elif isinstance(miles[0], list): #isinstance a function call. isinstance(object, type)
         for i in range(len(miles[0])):
             package = hash_table.lookup(miles[0][i]) #variable nested indexing. variable[x][x]
             package.delivery_time = truck2_time
-            for group3 in truck2b_route:
-                if truck2_time < 545:
-                    package.status = "Delayed."
-                elif truck2_time >= 545 and < package.deadline:
-                    package.status = "En route"
-                else:
-                    package.status = "Delivered"
     else:
         package = hash_table.lookup(miles[0])
         package.delivery_time = truck2_time
-        package.status = "Delivered"
+    
 
 #print(truck1_cur_time) THIS IS CORRECT!!! YAY IT MATCHES THE PRE PLANNING
 
@@ -163,9 +154,31 @@ choice = int(input("Pick which option you want. "))
 while choice != 3:
     if choice == 1:
         time_frame = input("Enter a time frame (HH:MM - HH:MM) ")
-        package_lookup = int(input("What package number? "))
-        package_info = hash_table.lookup(package_lookup)
-        print(package_info.status, package_info.delivery_time)
+
+        start_time, end_time = time_frame.split(" - ")
+        start_hour, start_minute = start_time.split(":")
+        end_hour, end_minute = end_time.split(":")
+
+        start_minutes = int(start_hour) * 60 + int(start_minute)
+        end_minutes = int(end_hour) * 60 + int(end_minute)
+
+        for package in packages:
+    
+            if package.delivery_time is None:
+                status = "At Hub"
+
+            elif end_minutes < package.delivery_time:
+                status = "En Route"
+
+            else:
+                status = "Delivered"
+
+            print(
+            "Package", package.package_id,
+            "| Status:", status,
+            "| Delivery Time:", package.delivery_time
+        )
+
     elif choice == 2:
         print(truck1.cur_mile + truck2.cur_mile)
     else:
