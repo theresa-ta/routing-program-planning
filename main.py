@@ -150,12 +150,13 @@ for miles in truck2b_route:
 
 
 #terminal intuitive interface -> delivery status, delivery time, any package time, total mileage
-print("WGUPUS Terminal Intuitive Interface\n1. Look up package\n2. View total mileage\n3. Exit")
+print("WGUPUS Terminal Intuitive Interface\n1. View all packages at a specific time.\n2. View total mileage\n3. Exit")
 
 choice = int(input("Pick which option you want. "))
 
 while choice != 3:
     if choice == 1:
+        time_frame = input("Enter a time frame (HH:MM - HH:MM) ")
         package_lookup = int(input("What package number? "))
         package_info = hash_table.lookup(package_lookup)
         print(package_info.status, package_info.delivery_time)
