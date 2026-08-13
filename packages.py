@@ -16,7 +16,7 @@ Package(
     "195 W Oakland Ave",
     "Salt Lake City",
     "84115",
-    "1030",
+    630,
     21
 ),
 
@@ -25,7 +25,7 @@ Package(
     "2530 S 500 E",
     "Salt Lake City",
     "84106",
-    "EOD",
+    None,
     44
 ),
 Package(
@@ -33,7 +33,7 @@ Package(
     "233 Canyon Rd",
     "Salt Lake City",
     "84103",
-    "EOD",
+    None,
     2
 ),
 
@@ -42,7 +42,7 @@ Package(
     "380 W 2880 S",
     "Salt Lake City",
     "84115",
-    "EOD",
+    None,
     4
 ),
 
@@ -51,7 +51,7 @@ Package(
     "410 S State St",
     "Salt Lake City",
     "84111",
-    "EOD",
+    None,
     5
 ),
 
@@ -60,7 +60,7 @@ Package(
     "3060 Lester St",
     "West Valley City",
     "84119",
-    "1030",
+    630,
     88
 ),
 
@@ -69,7 +69,7 @@ Package(
     "1330 2100 S",
     "Salt Lake City",
     "84106",
-    "EOD",
+    None,
     8
 ),
 
@@ -78,7 +78,7 @@ Package(
     "300 State St",
     "Salt Lake City",
     "84103",
-    "EOD",
+    None,
     9
 ),
 
@@ -87,7 +87,7 @@ Package(
     "300 State St",
     "Salt Lake City",
     "84103",
-    "EOD",
+    None,
     2
 ),
 
@@ -96,7 +96,7 @@ Package(
     "600 E 900 S",
     "Salt Lake City",
     "84105",
-    "EOD",
+    None,
     1
 ),
 
@@ -105,7 +105,7 @@ Package(
     "2600 Taylorsville BLvd",
     "Salt Lake City",
     "84118",
-    "EOD",
+    None,
     1
 ),
 
@@ -114,7 +114,7 @@ Package(
     "3575 W Valley Central Station",
     "West Valley City",
     "84119",
-    "EOD",
+    None,
     1
 ),
 
@@ -123,7 +123,7 @@ Package(
     "2010 W 500 S",
     "Salt Lake City",
     "84104",
-    "1030",
+    630,
     1
 ),
 
@@ -132,7 +132,7 @@ Package(
     "4300 S 1300 E",
     "Millcreek",
     "84117",
-    "1030",
+    630,
     88
 ),
 
@@ -141,7 +141,7 @@ Package(
     "4580 S 2300 E",
     "Holladay",
     "84103",
-    "0900",
+    540,
     4
 ),
 
@@ -150,7 +150,7 @@ Package(
     "4580 S 2300 E",
     "Holladay",
     "84103",
-    "1030",
+    630,
     88
 ),
 
@@ -159,7 +159,7 @@ Package(
     "3148 S 1100 W",
     "Salt Lake City",
     "84119",
-    "EOD",
+    None,
     2
 ),
 
@@ -168,7 +168,7 @@ Package(
     "1488 4800 S",
     "Salt Lake City",
     "84123",
-    "EOD",
+    None,
     6
 ),
 
@@ -177,7 +177,7 @@ Package(
     "177 W Price Ave",
     "Salt Lake City",
     "84115",
-    "EOD",
+    None,
     37
 ),
 
@@ -186,7 +186,7 @@ Package(
     "3591 Main St",
     "Salt Lake City",
     "84115",
-    "1030",
+    None,
     37
 ),
 
@@ -195,7 +195,7 @@ Package(
     "3595 Main St",
     "Salt Lake City",
     "84115",
-    "EOD",
+    None,
     3
 ),
 
@@ -204,7 +204,7 @@ Package(
     "6351 South 900 East",
     "Murray",
     "84118",
-    "EOD",
+    None,
     2
 ),
 
@@ -213,7 +213,7 @@ Package(
     "5100 South 2700 West",
     "Salt Lake City",
     "84118",
-    "EOD",
+    None,
     5
 ),
 
@@ -222,7 +222,7 @@ Package(
     "5025 State St",
     "Murray",
     "84107",
-    "EOD",
+    None,
     7
 ),
 
@@ -231,7 +231,7 @@ Package(
     "5383 South 900 East #104",
     "Salt Lake City",
     "84117",
-    "1030",
+    None,
     7
 ),
 
@@ -240,7 +240,7 @@ Package(
     "5383 South 900 East #104",
     "Salt Lake City",
     "84117",
-    "EOD",
+    None,
     25
 ),
 
@@ -249,7 +249,7 @@ Package(
     "1060 Dalton Ave S",
     "Salt Lake City",
     "84104",
-    "EOD",
+    None,
     5
 ),
 
@@ -258,7 +258,7 @@ Package(
     "2835 Main St",
     "Salt Lake City",
     "84115",
-    "EOD",
+    None,
     7
 ),
 
@@ -267,7 +267,7 @@ Package(
     "1330 2100 S",
     "Salt Lake City",
     "84106",
-    "1030",
+    630,
     2
 ),
 
@@ -276,7 +276,7 @@ Package(
     "300 State St",
     "Salt Lake City",
     "84103",
-    "1030",
+    630,
     1
 ),
 
@@ -285,7 +285,7 @@ Package(
     "3365 S 900 W",
     "Salt Lake City",
     "84119",
-    "1030",
+    630,
     1
 ),
 
@@ -294,7 +294,7 @@ Package(
     "3365 S 900 W",
     "Salt Lake City",
     "84119",
-    "EOD",
+    None,
     1
 ),
 
@@ -303,7 +303,7 @@ Package(
     "2530 S 500 E",
     "Salt Lake City",
     "84106",
-    "EOD",
+    None,
     1
 ),
 
@@ -312,7 +312,7 @@ Package(
     "4580 S 2300 E",
     "Holladay",
     "84117",
-    "1030",
+    630,
     2
 ),
 
@@ -321,7 +321,7 @@ Package(
     "1060 Dalton Ave S",
     "Salt Lake City",
     "84104",
-    "EOD",
+    None,
     88
 ),
 
@@ -330,7 +330,7 @@ Package(
     "2300 Parkway Blvd",
     "West Valley City",
     "84119",
-    "EOD",
+    None,
     88
 ),
 
@@ -339,7 +339,7 @@ Package(
     "410 S State St",
     "Salt Lake City",
     "84111",
-    "1030",
+    630,
     2
 ),
 
@@ -348,7 +348,7 @@ Package(
     "410 S State St",
     "Salt Lake City",
     "84111",
-    "EOD",
+    None,
     9
 ),
 
@@ -357,7 +357,7 @@ Package(
     "2010 W 500 S",
     "Salt Lake City",
     "84104",
-    "EOD",
+    None,
     9
 ),
 
@@ -366,7 +366,7 @@ Package(
     "380 W 2880 S",
     "Salt Lake City",
     "84115",
-    "1030",
+    630,
     45
 )
 

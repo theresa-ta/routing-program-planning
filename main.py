@@ -139,7 +139,13 @@ for miles in truck2b_route:
         for i in range(len(miles[0])):
             package = hash_table.lookup(miles[0][i]) #variable nested indexing. variable[x][x]
             package.delivery_time = truck2_time
-            package.status = "Delivered"
+            for group3 in truck2b_route:
+                if truck2_time < 545:
+                    package.status = "Delayed."
+                elif truck2_time >= 545 and < package.deadline:
+                    package.status = "En route"
+                else:
+                    package.status = "Delivered"
     else:
         package = hash_table.lookup(miles[0])
         package.delivery_time = truck2_time
