@@ -159,16 +159,19 @@ while choice != 3:
         req_time = int(hour) * 60 + int(minute)
 
         for package in packages:
-    
-            if package.delivery_time is None:
+            if package in group3 and req_time < 545:
+                status = "Delayed"
+
+            elif package.delivery_time is None:
                 status = "At Hub"
 
             elif req_time < package.delivery_time:
                 status = "En Route"
-
+                
             else:
                 status = "Delivered"
-            if package.delivery_time != None:
+
+            if status == "Delivered":
                 delivery_hour = int(package.delivery_time // 60)
                 delivery_minute = int(package.delivery_time % 60)
                 delivery_time = f"{delivery_hour:02d}:{delivery_minute:02d}"
