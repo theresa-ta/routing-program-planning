@@ -153,30 +153,32 @@ choice = int(input("Pick which option you want. "))
 
 while choice != 3:
     if choice == 1:
-        time_frame = input("Enter a time frame (HH:MM - HH:MM) ")
-
-        start_time, end_time = time_frame.split(" - ")
-        start_hour, start_minute = start_time.split(":")
-        end_hour, end_minute = end_time.split(":")
-
-        start_minutes = int(start_hour) * 60 + int(start_minute)
-        end_minutes = int(end_hour) * 60 + int(end_minute)
+        time_frame = input("Enter a time(HH:MM) ")
+        
+        hour, minute = time_frame.split(":")
+        req_time = int(hour) * 60 + int(minute)
 
         for package in packages:
     
             if package.delivery_time is None:
                 status = "At Hub"
 
-            elif end_minutes < package.delivery_time:
+            elif req_time < package.delivery_time:
                 status = "En Route"
 
             else:
                 status = "Delivered"
+            if package.delivery_time != None:
+                delivery_hour = int(package.delivery_time // 60)
+                delivery_minute = int(package.delivery_time % 60)
+                delivery_time = f"{delivery_hour:02d}:{delivery_minute:02d}"
+            else:
+                delivery_time = "N/A"
 
             print(
             "Package", package.package_id,
             "| Status:", status,
-            "| Delivery Time:", package.delivery_time
+            "| Delivery Time:", delivery_time
         )
 
     elif choice == 2:
