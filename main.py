@@ -149,7 +149,7 @@ for miles in truck2b_route:
 #terminal intuitive interface -> delivery status, delivery time, any package time, total mileage
 print("WGUPUS Terminal Intuitive Interface\n1. View all packages at a specific time.\n2. View total mileage\n3. Exit")
 
-choice = int(input("Pick which option you want. "))
+choice = int(input("Pick which option choice. "))
 
 while choice != 3:
     if choice == 1:
@@ -167,7 +167,7 @@ while choice != 3:
 
             elif req_time < package.delivery_time:
                 status = "En Route"
-                
+
             else:
                 status = "Delivered"
 
@@ -188,5 +188,5 @@ while choice != 3:
         print(truck1.cur_mile + truck2.cur_mile)
     else:
         pass
-    choice = int(input("Pick which option you want. "))
+    choice = int(input("Pick which option choice. "))
 
