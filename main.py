@@ -85,6 +85,8 @@ truck2b_route = [
     (hub, 5.0)
     ]
 
+truck2b_packages = [25, 26, 6, 31, 32, 36, 18, 21, 28, 2, 33, 3, 9, 10]
+
 #create truck time start at 8 am. 8X60 so that we can calculate hours/minutes conversion later
 truck1_time = 8 * 60
 
@@ -123,12 +125,13 @@ for miles in truck2_route:
         package = hash_table.lookup(miles[0])
         package.delivery_time = truck2_time
 
+truck2b_time = 9 * 60 + 5
 
 for miles in truck2b_route:
     truck2.cur_mile += miles[1]
 
     travel_time = (miles[1] / 18) * 60
-    truck2_time += travel_time #have to convert this to time
+    truck2b_time += travel_time #have to convert this to time
   
     if miles[0] == hub:
         pass
@@ -136,10 +139,10 @@ for miles in truck2b_route:
     elif isinstance(miles[0], list): #isinstance a function call. isinstance(object, type)
         for i in range(len(miles[0])):
             package = hash_table.lookup(miles[0][i]) #variable nested indexing. variable[x][x]
-            package.delivery_time = truck2_time
+            package.delivery_time = truck2b_time
     else:
         package = hash_table.lookup(miles[0])
-        package.delivery_time = truck2_time
+        package.delivery_time = truck2b_time
     
 
 #print(truck1_cur_time) THIS IS CORRECT!!! YAY IT MATCHES THE PRE PLANNING
@@ -162,7 +165,7 @@ while choice != 3:
             if package in group3 and req_time < 545:
                 status = "Delayed"
 
-            elif package.delivery_time is None:
+            elif package.package_id in truck2b_packages and req_time < 545:
                 status = "At Hub"
 
             elif req_time < package.delivery_time:
@@ -189,4 +192,5 @@ while choice != 3:
     else:
         pass
     choice = int(input("Pick which option choice. "))
+
 
