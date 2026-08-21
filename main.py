@@ -90,6 +90,12 @@ truck2b_packages = [25, 26, 6, 31, 32, 36, 18, 21, 28, 2, 33, 3, 9, 10]
 #create truck time start at 8 am. 8X60 so that we can calculate hours/minutes conversion later
 truck1_time = 8 * 60
 
+
+"""3 different for loops for each truck to loop through the list to keep count of 
+1. miles as it goes to each route 
+2. update delivery time with truck time at each stop
+"""
+
 for miles in truck1_route:
     truck1.cur_mile += miles[1]
 
