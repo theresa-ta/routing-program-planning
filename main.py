@@ -181,13 +181,26 @@ while choice != 3:
                 delivery_time = f"{delivery_hour:02d}:{delivery_minute:02d}"
             else:
                 delivery_time = "N/A"
+            
+            if package.deadline != None:
+                deadline_hour = int(package.deadline // 60)
+                deadline_minute = int(package.deadline % 60)
+                deadline_time = f"{deadline_hour:02d}:{deadline_minute:02d}"
+            else:
+                deadline_time = "None"
+
+            if package in truck1.packages_truck:
+                truck_number = 1
+            else:
+                truck_number = 2
 
             print(
             "Package", package.package_id,
             "| Address:", package.address,
             "| Status:", status,
-            "| Deadline:", package.deadline,
-            "| Delivery Time:", delivery_time
+            "| Deadline:", deadline_time,
+            "| Delivery Time:", delivery_time,
+            "| On truck", truck_number
 
         )
 
